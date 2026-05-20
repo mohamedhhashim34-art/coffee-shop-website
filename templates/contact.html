@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Bean &amp; Brew</title>
+  <link rel="icon" href="/static/images/favicon.svg" />
+  <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+  <nav class="nav">
+    <a href="/" class="logo">☕ Bean &amp; Brew</a>
+    <button id="dark-mode-btn" class="small-btn" type="button">Dark Mode</button>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/products.html">Products</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="page card-section">
+    <h1>Contact Us</h1>
+    <p>We'd love to hear from you. Drop us a message below.</p>
+
+    <form id="contact-form" class="form" novalidate>
+      <label>Name
+        <input type="text" id="c-name" placeholder="Your name" />
+      </label>
+      <label>Email
+        <input type="email" id="c-email" placeholder="you@example.com" />
+      </label>
+      <label>Message
+        <textarea id="c-message" rows="4" placeholder="Write your message here"></textarea>
+      </label>
+
+      <p id="form-error" class="error"></p>
+      <p id="form-success" class="success"></p>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2026 Bean &amp; Brew Coffee Shop</p>
+    <p>Email: coffee@beanbrew.com</p>
+    <p>Follow us on Instagram &amp; Facebook</p>
+  </footer>
+
+  <button id="scroll-top-btn" type="button" aria-label="Scroll to top">↑</button>
+  <script src="/static/js/script.js"></script>
+</body>
+</html>

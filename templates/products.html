@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Menu — Bean &amp; Brew</title>
+  <link rel="icon" href="/static/images/favicon.svg" />
+  <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+  <nav class="nav">
+    <a href="/" class="logo">☕ Bean &amp; Brew</a>
+    <button id="dark-mode-btn" class="small-btn" type="button">Dark Mode</button>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/products.html">Products</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="page card-section">
+    <h1>Our Menu</h1>
+    <p>Loaded live from our small database via the API.</p>
+
+    <label class="search-label" for="search-box">Search drinks</label>
+    <input type="text" id="search-box" placeholder="Search for coffee, latte, mocha..." />
+
+    <p id="loading" class="loading">Loading products...</p>
+    <p id="products-error" class="error"></p>
+
+    <table id="products-table">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Price ($)</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <h2>Product Cards</h2>
+    <div id="products-cards" class="products-grid"></div>
+
+    <h2>Add a new drink</h2>
+    <form id="add-product-form" class="form">
+      <input type="text" id="p-name" placeholder="Name" required />
+      <input type="number" id="p-price" placeholder="Price" step="0.10" min="0" required />
+      <input type="text" id="p-desc" placeholder="Description" />
+      <p id="product-form-message" class="success"></p>
+      <button type="submit">Add</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2026 Bean &amp; Brew Coffee Shop</p>
+    <p>Email: coffee@beanbrew.com</p>
+    <p>Follow us on Instagram &amp; Facebook</p>
+  </footer>
+
+  <button id="scroll-top-btn" type="button" aria-label="Scroll to top">↑</button>
+  <script src="/static/js/script.js"></script>
+</body>
+</html>
