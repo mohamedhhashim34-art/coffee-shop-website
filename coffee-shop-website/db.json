@@ -1,0 +1,80 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Espresso",
+      "price": 2.5,
+      "description": "Rich single shot of pure coffee.",
+      "image": "static/images/hero.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Cappuccino",
+      "price": 3.5,
+      "description": "Espresso topped with steamed milk foam.",
+      "image": "static/images/about.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Latte",
+      "price": 4,
+      "description": "Smooth espresso with creamy steamed milk.",
+      "image": "static/images/about.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Mocha",
+      "price": 4.5,
+      "description": "Chocolate, espresso and milk in harmony.",
+      "image": "static/images/hero.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Americano",
+      "price": 3,
+      "description": "Espresso diluted with hot water.",
+      "image": "static/images/hero.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Macchiato",
+      "price": 3.75,
+      "description": "Espresso marked with a dot of milk.",
+      "image": "static/images/about.jpg"
+    },
+    {
+      "name": "tea",
+      "price": 2,
+      "description": "",
+      "image": "static/images/hero.jpg",
+      "id": 7
+    }
+    
+  ],
+  "messages": [
+    {
+      "name": "mmm",
+      "email": "wjwk@gmail.com",
+      "message": "ok",
+      "id": 1
+    }
+  ],
+  "orders": [
+    {
+      "name": "Mohamed",
+      "phone": "01062669123",
+      "drink": "Espresso",
+      "quantity": 1,
+      "notes": "",
+      "id": 1
+    },
+    {
+      "name": "steven",
+      "phone": "89291828",
+      "drink": "tea",
+      "quantity": 1,
+      "notes": "",
+      "id": 2
+    }
+  ]
+}

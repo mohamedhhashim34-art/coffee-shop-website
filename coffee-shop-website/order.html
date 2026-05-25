@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Drink — Bean &amp; Brew</title>
+  <link rel="icon" href="static/images/favicon.svg" />
+  <link rel="stylesheet" href="static/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+  <nav class="nav">
+    <a href="index.html" class="logo"><span class="logo-mark">☕</span> Bean &amp; Brew</a>
+    <ul><li><a href="index.html">Home</a></li><li><a href="products.html">Products</a></li><li><a class="active order-link" href="order.html">Order</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul>
+    <button id="dark-mode-btn" class="theme-toggle" type="button"><i class="fa-solid fa-moon"></i></button>
+  </nav>
+
+  <main class="page order-page">
+    <div class="order-icon"></div>
+    <div class="section-head">
+      <h1>Order Your Drink</h1>
+      <p>Fill in your details and choose your favorite handcrafted brew.</p>
+    </div>
+    <section class="form-shell">
+      <form id="order-form" class="form" novalidate>
+        <div class="form-grid">
+          <label>Name<input type="text" id="o-name" placeholder="Your name" /></label>
+          <label>Phone<input type="tel" id="o-phone" placeholder="Your phone number" /></label>
+          <label>Drink<select id="o-drink"><option value="">Choose a drink</option></select></label>
+          <label>Quantity<input type="number" id="o-quantity" min="1" value="1" /></label>
+          <label class="full">Notes<textarea id="o-notes" rows="5" placeholder="Any extra notes? (e.g., extra shot, oat milk)"></textarea></label>
+        </div>
+        <p id="order-error" class="error"></p><p id="order-success" class="success"></p>
+        <button type="submit">Book Order</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="footer-grid"><div><h3>Bean &amp; Brew</h3><p>© 2026 Bean &amp; Brew Coffee Shop</p></div><div><h3>Get in Touch</h3><p>coffee@beanbrew.com</p></div><div><h3>Social</h3><div class="socials"><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-facebook-f"></i></a></div></div></div></footer>
+  <button id="scroll-top-btn" type="button">↑</button><script src="static/js/script.js"></script>
+</body>
+</html>

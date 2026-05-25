@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Menu — Bean &amp; Brew</title>
+  <link rel="icon" href="static/images/favicon.svg" />
+  <link rel="stylesheet" href="static/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+  <nav class="nav">
+    <a href="index.html" class="logo"><span class="logo-mark">☕</span> Bean &amp; Brew</a>
+    <ul><li><a href="index.html">Home</a></li><li><a class="active" href="products.html">Products</a></li><li><a class="order-link" href="order.html">Order</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul>
+    <button id="dark-mode-btn" class="theme-toggle" type="button"><i class="fa-solid fa-moon"></i></button>
+  </nav>
+
+  <main class="page">
+    <section class="products-top">
+      <div class="kicker">Our Curated Menu</div>
+      <h1>Discover our handcrafted selection</h1>
+      <p>Artisan coffees and seasonal brews, sourced responsibly from farmers worldwide.</p>
+      <div class="search-wrap"><i class="fa-solid fa-magnifying-glass"></i><input type="text" id="search-box" placeholder="Search for coffee, latte, mocha..." /></div>
+    </section>
+
+    <p id="loading" class="loading">Loading our finest brews...</p><p id="products-error" class="error"></p>
+    <div class="divider-title">Menu Overview</div>
+    <table id="products-table"><thead><tr><th>Product</th><th>Price</th><th>Description</th></tr></thead><tbody></tbody></table>
+
+    <div class="divider-title">Signature Favorites</div>
+    <div id="products-cards" class="products-grid"></div>
+
+    <section class="form-shell">
+      <h3>Suggest a New Drink</h3>
+      <form id="add-product-form" class="form">
+        <div class="form-grid">
+          <input type="text" id="p-name" placeholder="Name of drink" required />
+          <input type="number" id="p-price" placeholder="Price (e.g. 4.50)" step="0.10" min="0" required />
+          <textarea class="full" id="p-desc" placeholder="Describe the flavors and ingredients..."></textarea>
+        </div>
+        <p id="product-form-message" class="success"></p><button type="submit">Add to Menu</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="footer-grid"><div><h3>☕ Bean &amp; Brew</h3><p>Crafting the perfect cup since 2026. Join our coffee journey.</p></div><div><h3>Contact Us</h3><p>Email: coffee@beanbrew.com</p><p>Phone: (555) 123-4567</p></div><div><h3>Follow Us</h3><div class="socials"><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-facebook-f"></i></a></div></div></div><div class="footer-bottom">© 2026 Bean &amp; Brew Coffee Shop. All rights reserved.</div></footer>
+  <button id="scroll-top-btn" type="button">↑</button><script src="static/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bean &amp; Brew — Coffee Shop</title>
+  <link rel="icon" href="static/images/favicon.svg" />
+  <link rel="stylesheet" href="static/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+  <nav class="nav">
+    <a href="index.html" class="logo"><span class="logo-mark">☕</span> Bean &amp; Brew</a>
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a class="order-link" href="order.html">Order</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button id="dark-mode-btn" class="theme-toggle" type="button" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></button>
+  </nav>
+
+  <header class="hero">
+    <img src="static/images/hero.jpg" alt="Cozy coffee shop interior" />
+    <div class="hero-text">
+      <h1>Freshly Brewed Happiness</h1>
+      <p class="metal-text">Welcome to Bean &amp; Brew — where every cup tells a story of passion and heritage.</p>
+      <button id="welcome-btn" type="button">Say Hello</button>
+    </div>
+  </header>
+
+  <section class="intro card-section">
+    <div class="image-wrap">
+      <img class="home-extra-image" src="static/images/about.jpg" alt="Latte art" />
+      <div class="est-badge">Est. 2026</div>
+    </div>
+    <div>
+      <div class="kicker">Our Philosophy</div>
+      <h2>Crafted with Care</h2>
+      <p>We source single-origin beans from small farms and roast them locally each week to ensure the highest quality in every sip.</p>
+      <p>Visit us for a warm cup, free Wi‑Fi, and the best pastries in town. Our space is designed to be your home away from home.</p>
+      <div class="link-row">
+        <a href="products.html">See our menu →</a>
+        <a href="https://www.coffee.org" target="_blank" rel="noopener">Learn about coffee ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="pour-showcase">
+    <div class="pour-stage" aria-hidden="true">
+      <div class="pot"></div>
+      <div class="stream"></div>
+      <div class="cup"></div>
+    </div>
+    <div class="pour-copy">
+      <div class="kicker">Slow Pour</div>
+      <h2>Fresh coffee, made in motion.</h2>
+      <p>A simple animated coffee pour adds the premium dark section feeling without making the project complicated.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div><h3>☕ Bean &amp; Brew</h3><p>Your neighborhood spot for the perfect brew.</p></div>
+      <div><h3>Contact</h3><p>Email: coffee@beanbrew.com</p><p>Phone: (555) 123-4567</p></div>
+      <div><h3>Follow Us</h3><div class="socials"><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-facebook-f"></i></a><a href="#"><i class="fa-brands fa-x-twitter"></i></a></div></div>
+    </div>
+    <div class="footer-bottom">© 2026 Bean &amp; Brew Coffee Shop. All rights reserved.</div>
+  </footer>
+
+  <button id="scroll-top-btn" type="button" aria-label="Scroll to top">↑</button>
+  <script src="static/js/script.js"></script>
+</body>
+</html>
